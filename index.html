@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tixchain</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TicketMintAPI</div>
+        <ul class="nav-links">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#graphs">Analytics</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#transactions">Transactions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard Overview -->
+    <section class="dashboard">
+        <h1>API Overview</h1>
+        <div class="stats">
+            <div class="card">
+                <h3>🎟️ Total Minted Tickets</h3>
+                <p>12,458</p>
+            </div>
+            <div class="card">
+                <h3>💰 Total Profits</h3>
+                <p>$78,392</p>
+            </div>
+            <div class="card">
+                <h3>🔄 Resale Royalties</h3>
+                <p>$15,249</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphs Section -->
+    <section id="graphs" class="graphs">
+        <h2>Profit vs Minted Tickets</h2>
+        <canvas id="profitChart"></canvas>
+    </section>
+
+    <!-- Events & Transactions -->
+    <section id="events" class="events">
+        <h2>Recent Events</h2>
+        <ul>
+            <li>✅ 1000 tickets minted for Concert XYZ</li>
+            <li>🔄 20 tickets resold on secondary market</li>
+            <li>💸 $2,500 royalties collected</li>
+        </ul>
+    </section>
+
+    <!-- Transactions Section -->
+    <section id="transactions" class="transactions">
+        <h2>Transaction Logs</h2>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Minted</th>
+                <th>Profits</th>
+                <th>Resales</th>
+            </tr>
+            <tr>
+                <td>Concert A</td>
+                <td>5,000</td>
+                <td>$30,000</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Festival B</td>
+                <td>2,500</td>
+                <td>$15,000</td>
+                <td>300</td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="script.js"></script> <!-- JavaScript for the Graph -->
+</body>
+</html>
